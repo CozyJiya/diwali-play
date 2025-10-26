@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Rangoli Creator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rangoli Canvas Challenge 🎨</h1>
+    <p class="message">Design now! Timer starts.</p>
+
+    <div class="tools">
+      <button id="clear-btn">Clear</button>
+      <button id="undo-btn">Undo</button>
+      <button id="symmetry-btn">Symmetry: ON</button>
+
+      <label class="brush-label">
+        Brush:
+        <input id="brush-size" type="range" min="1" max="20" value="3" />
+        <span id="brush-value">3</span> px
+      </label>
+
+      <button id="save-btn">Save Rangoli</button>
+    </div>
+
+    <div class="color-picker" aria-hidden="false"></div>
+
+    <canvas id="rangoli-canvas" width="350" height="350"></canvas>
+
+    <p class="sexy-message" id="sexy-msg" style="display:none;">
+      Let's forget the floor and make a beautiful design... but this time, it'll be a full-body pattern just for you. Get ready for some vibrant coloring.
+    </p>
+
+    <a href="../diya-decorator/index.html" class="next-button" id="next-btn" style="display:none;">
+      Next
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 

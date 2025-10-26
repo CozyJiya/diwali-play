@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Decorator - Diwali Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🪔 Diya Decorator 🪔</h1>
+        <p class="message">Decorate your diya and make it shine this Diwali!.Be creative!</p>
+
+        <div class="tools">
+            <button id="paint-btn" class="active">Paint</button>
+            <button id="glitter-btn">Add Glitter</button>
+            <button id="bead-btn">Add Beads</button>
+            <button id="clear-btn">Clear</button>
+            <button id="save-btn">Save Rangoli</button>
+        </div>
+
+        <div class="color-picker">
+            <div class="color-option active" style="background-color: #FF4B2B;"></div>
+            <div class="color-option" style="background-color: #FFD700;"></div>
+            <div class="color-option" style="background-color: #800080;"></div>
+            <div class="color-option" style="background-color: #C70039;"></div>
+            <div class="color-option" style="background-color: #FFA500;"></div>
+            <div class="color-option" style="background-color: #006400;"></div>
+            <div class="color-option" style="background-color: #FF1493;"></div>
+            <div class="color-option" style="background-color: #4B0082;"></div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="diya-canvas" width="600" height="400"></canvas>
+        </div>
+
+        <p class="message" id="save-message" style="display:none;"></p>
+        <a href="../light-the-night/index.html" class="next-button" id="next-btn">Next</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

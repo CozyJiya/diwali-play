@@ -1,0 +1,154 @@
+body {
+  text-align: center;
+  /* Soft, neutral background from your theme */
+  background: #fff8dc; 
+  font-family: 'Poppins', sans-serif;
+  color: #6b2e18;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+    background: #ffffff; /* White card */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(179, 57, 57, 0.1); /* Subtle shadow using a theme color */
+    max-width: 800px;
+    width: 95%;
+}
+
+.game-title {
+  color: #b33939; /* Deep Red/Maroon */
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* --- Score Board Styling (Simplified) --- */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.score-box {
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #6b2e18; /* Text color */
+    min-width: 180px;
+    /* Plain color theme, light background */
+    background: #fff0d6; /* A slightly darker version of body bg */
+    border: 2px solid #b33939; /* Simple border */
+    box-shadow: none;
+}
+
+.box-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.score-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* --- Item Categories --- */
+.item-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.item-category {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Simple, light-colored background for categories */
+    background: #f7f3e8; 
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #6b2e18;
+    border: 1px solid #d3c49a;
+}
+
+/* --- Room/Game Area --- */
+#room {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  margin: 20px auto;
+  border: 4px solid #b33939;
+  background-size: cover;
+  background-position: center;
+  /* Initial Cluttered Background */
+  background-image: url('https://i.pinimg.com/1200x/1d/46/bd/1d46bd3d624999e93c00d0575a2268c4.jpg'); 
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: background-image 1s ease-in-out;
+}
+
+/* New clean background for when the game is won */
+#room.clean {
+    background-image: url('https://i.pinimg.com/736x/b7/47/2b/b7472b76c0f387b91d79bcd234622889.jpg'); 
+    border-color: #4CAF50; /* Still nice to have a visual success indicator */
+}
+
+/* --- Hidden Items --- */
+.item {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 2.5rem; 
+  line-height: 1;
+}
+
+.item-small {
+    font-size: 1rem; 
+    opacity: 0.8;
+}
+
+.item:hover {
+  transform: scale(1.3) rotate(5deg);
+}
+
+/* --- Success Message --- */
+#game-status {
+    min-height: 50px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    font-size: 1.1rem;
+}
+
+.success-message {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #b33939; /* Theme color for the main message */
+}
+
+/* --- Next Button --- */
+.next-button {
+  margin-top: 25px;
+  padding: 15px 30px;
+  border:none;
+  border-radius: 30px;
+  /* Plain purple color from your original button style */
+  background: #8e44ad;
+  color:white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.next-button:hover {
+  background: #732d91; /* Darker purple on hover */
+  transform: translateY(-1px);
+}

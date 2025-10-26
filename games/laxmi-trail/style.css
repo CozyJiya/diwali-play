@@ -1,0 +1,89 @@
+body {
+  text-align: center;
+  background: #f7e6c3; /* Lighter background */
+  font-family: 'Poppins', sans-serif;
+  color: #6b2e18;
+}
+
+.game-container {
+  max-width: 550px; /* Slightly wider */
+  margin: 20px auto;
+  background: #fff8e5;
+  border: 4px solid #b33939; /* Thicker border */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#gameArea {
+  width: 500px; /* Wider game area */
+  height: 300px;
+  margin: 0 auto 20px;
+  border: 3px solid #b33939;
+  position: relative;
+  overflow: hidden;
+  background: #b2e0ff; /* Sky color */
+  font-size: 30px;
+}
+
+#ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Ground height */
+    background: #5cb85c; /* Grass color */
+    border-top: 5px solid #449d44;
+    z-index: 1; /* Ensure ground is behind most items */
+}
+
+#player {
+  position: absolute;
+  /* Adjusted to sit on top of the new ground element (60px height) */
+  bottom: 65px; 
+  left: 50px;
+  transition: bottom 0.1s; /* Smooth movement */
+  z-index: 10;
+}
+
+.item {
+  position: absolute;
+  font-size: 25px;
+  z-index: 5;
+}
+
+.coin { color: gold; }
+.diya { color: orange; }
+.obstacle { color: grey; }
+
+.house { 
+    /* Made the house much bigger */
+    font-size: 80px; 
+    bottom: 40px !important; /* Force it to the ground */
+    z-index: 8;
+}
+
+.hidden { display: none; }
+
+#nextBtn, #replayBtn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+  background: #e67e22; /* Diwali-themed color */
+  color: white;
+  cursor: pointer;
+}
+
+#nextBtn:hover, #replayBtn:hover { background: #d35400; }

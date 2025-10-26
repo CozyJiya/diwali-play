@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    background: #fff3cd;
+    font-family: 'Poppins', sans-serif;
+    color: #b33939;
+    padding: 2rem;
+}
+
+.game-container {
+    background: #ffecc7;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(179, 57, 57, 0.3);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.sweet {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: #fff8e1;
+    border: 2px solid #b33939;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s;
+}
+
+.sweet:hover { transform: scale(1.2); }
+
+button, .next-button {
+    background: #d35400;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+button:hover, .next-button:hover {
+    background: #e67e22;
+}
+
+.hidden { display: none; }
+
+#win-message {
+    font-size: 1.2rem;
+    color: #6b2e18;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

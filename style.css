@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('https://i.pinimg.com/1200x/57/eb/92/57eb92f72fefd86f76582f5eba0a7f2f.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 20px;
+  color: #ffeaa7;
+  border: 2px solid #ffdd59;
+}
+
+button {
+  background: #ff9f43;
+  border: none;
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background: #ff793f;
+}

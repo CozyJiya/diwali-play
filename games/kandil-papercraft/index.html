@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kandil Paper Cutting</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>✂️ Kandil Paper-Cut</h1>
+    <p class="instructions">Draw your pattern on the folded triangle!✨✨</p>
+
+    <div id="drawingState">
+        <div class="triangle-container">
+            <canvas id="cutCanvas" width="300" height="300"></canvas>
+        </div>
+        <div class="tools">
+            <button id="undoBtn">Undo</button>
+            <button id="clearBtn">Clear</button>
+            <button id="unfoldBtn">Unfold!</button>
+        </div>
+    </div>
+
+    <div id="unfoldedState" class="hidden">
+        <div id="unfoldedKandilWrapper">
+            <div id="unfoldedKandil"></div>
+            <div id="tasselContainer"></div>
+        </div>
+
+        <div class="kandil-tools">
+            <button id="lightBtn">Add Light ✨</button>
+            <button id="tasselsBtn">Add Tassels 🎀</button>
+            <button id="saveBtn">Save Kandil 💾</button>
+        </div>
+    </div>
+
+    <p id="sexyMessage" class="hidden">🔥 Let's unfold some secrets tonight. I want to carefully cut and join every inch of you until we create a masterpiece that leaves us both dangling... in ecstasy. 🔥</p>
+    <a href="../cracker-rescue/index.html" id="nextBtn" class="next-button hidden">Next</a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

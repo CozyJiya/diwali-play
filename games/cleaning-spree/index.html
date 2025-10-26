@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Great Cleaning Spree</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="game-title">🧹 The Great Cleaning Spree</h1>
+    
+    <div id="game-status">
+        </div>
+
+    <div class="score-board">
+        <div class="score-box collected-box">
+            <span class="box-label">Items Collected:</span>
+            <span class="score-value" id="items-collected">0 / 15</span>
+        </div>
+        <div class="score-box time-box">
+            <span class="box-label">Time:</span>
+            <span class="score-value" id="time-left">60s</span>
+        </div>
+    </div>
+    
+    <div class="item-list">
+        <div class="item-category">
+            <span role="img" aria-label="Books icon">📙</span>
+            <span id="books-count">Books: 0</span>
+        </div>
+        <div class="item-category">
+            <span role="img" aria-label="Clothes icon">🧦</span>
+            <span id="clothes-count">Clothes: 0</span>
+        </div>
+        <div class="item-category">
+            <span role="img" aria-label="Misc icon">🎒</span>
+            <span id="misc-count">Misc: 0</span>
+        </div>
+    </div>
+
+    <div id="room">
+      </div>
+
+    <button id="nextBtn" class="next-button" style="display: none;">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

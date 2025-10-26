@@ -1,0 +1,88 @@
+body {
+    text-align: center;
+    background: #fff3cd; /* warm festive background */
+    font-family: 'Poppins', sans-serif;
+    color: #b33939;
+    padding: 2rem;
+}
+
+.game-container {
+    background: #ffecc7;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(179, 57, 57, 0.3);
+}
+
+h1 {
+    color: #b33939;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #6b2e18;
+}
+
+.tools {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.color-picker {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-option:hover { transform: scale(1.1); }
+.color-option.active { border: 3px solid #b33939; }
+
+.canvas-container { margin: auto; margin-bottom: 1rem; }
+#diya-canvas {
+    border: 2px solid #b33939;
+    border-radius: 10px;
+    background: white;
+    cursor: crosshair;
+}
+
+button {
+    background: #d35400;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover { background: #e67e22; }
+
+.next-button {
+    display: none;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #4ECDC4;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.next-button:hover { box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4); }

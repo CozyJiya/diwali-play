@@ -1,0 +1,161 @@
+body {
+    text-align: center;
+    background: #fff3cd;
+    font-family: sans-serif;
+    color: #b33939;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background: #ffecc7;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(179, 57, 57, 0.3);
+    position: relative;
+    overflow: visible; /* Allow glow to extend */
+}
+
+h1 { color: #b33939; margin-bottom: 0.5rem; }
+.instructions { margin-bottom: 1.5rem; font-size: 1.1rem; }
+
+#drawingState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangle-container { 
+    margin: 1rem auto; 
+    position: relative; 
+    width: 300px; 
+    height: 300px;
+}
+
+canvas#cutCanvas {
+    border: 2px solid #b33939;
+    border-radius: 10px;
+    background: white;
+    cursor: crosshair;
+}
+
+.tools button, .kandil-tools button {
+    margin: 5px;
+    padding: 10px 15px;
+    background: #d35400;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.tools button:hover, .kandil-tools button:hover { background: #e67e22; }
+
+/* 2. Unfolded State */
+#unfoldedState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px; /* Increased padding to give more space below tassels for buttons */
+}
+
+#unfoldedKandilWrapper {
+    margin: 20px 0;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /* REMOVED border and background-color to make only cutout glow */
+}
+
+#unfoldedKandil svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible; 
+}
+
+/* 3. Tassel Styling */
+#tasselContainer {
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the wrapper */
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+    padding-bottom: 20px; /* Small gap between tassels and the bottom of the wrapper */
+}
+
+.tassel {
+    width: 15px;
+    height: 40px;
+    background: linear-gradient(to bottom, #d35400, #e67e22);
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.tassel::before { 
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px;
+    background-color: #f1c40f; 
+    border-radius: 2px;
+}
+
+.tassel > div { 
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: #f1c40f;
+    bottom: 0;
+}
+/* ... rest of tassel positioning styles ... */
+.tassel > div:nth-child(1) { left: 2px; }
+.tassel > div:nth-child(2) { left: 5px; }
+.tassel > div:nth-child(3) { left: 8px; }
+.tassel > div:nth-child(4) { left: 11px; }
+.tassel > div:nth-child(5) { left: 14px; }
+
+
+/* 4. Utilities */
+.hidden { display: none !important; }
+
+.kandil-tools {
+    margin-top: 60px; /* Increased margin to push buttons below tassels */
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    background: #4ECDC4;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.next-button:hover { box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4); transform: translateY(-2px); }
+
+#sexyMessage { margin-top: 15px; font-size: 18px; color: #e74c3c; animation: pulse 1.5s infinite alternate; }
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}

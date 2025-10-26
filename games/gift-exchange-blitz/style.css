@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    background: #fff8f0;
+    font-family: 'Poppins', sans-serif;
+    color: #6b2e18;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #b33939;
+}
+
+#target-display {
+    margin: 10px auto;
+    padding: 10px;
+    background: #f7e1c8;
+    border: 2px dashed #b33939;
+    width: 350px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#instructions {
+    margin: 10px auto; 
+    padding: 10px; 
+    background: #ffe6e6; 
+    border: 2px solid #b33939; 
+    width: 350px; 
+    font-size: 16px;
+    text-align: left;
+}
+
+#instructions ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+#belt {
+    width: 400px;
+    height: 120px;
+    margin: 20px auto;
+    background: #e0c9a9;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #b33939;
+}
+
+/* Base gift style - uses padding to size the container for the emoji */
+.gift {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    border-radius: 8px;
+    /* Center the emoji */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Size of the emoji */
+}
+
+/* Emojis applied via the ::before pseudo-element */
+.sweets::before {
+    content: '🎁';
+}
+
+.dry-fruits::before {
+    content: '📦';
+}
+
+.idols::before {
+    content: '💝';
+}
+
+.gift:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Feedback classes for a visual "flash" */
+.correct-match {
+    background-color: #4CAF50;
+    opacity: 0.5;
+}
+
+.incorrect-match {
+    background-color: #F44336;
+    opacity: 0.5;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #8e44ad;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #732d91;
+}
+
+#score, #timer {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b33939;
+}
+
+#timer {
+    font-size: 18px;
+    color: #6b2e18;
+}
+
+/* Style for the Final Message Container */
+.final-message-container {
+    padding: 20px; 
+    margin: 30px auto; 
+    max-width: 650px; 
+    background: linear-gradient(145deg, #ffd700, #ff8c00); 
+    border-radius: 20px; 
+    border: 5px solid #8e44ad; 
+    color: #6b2e18; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+    text-align: center;
+}

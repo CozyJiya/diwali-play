@@ -1,0 +1,61 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  text-align: center;
+  background: #fff3cd;
+  font-family: 'Poppins', sans-serif;
+  color: #b33939;
+  padding: 2rem;
+}
+.game-container {
+  background: #ffecc7;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(179,57,57,0.3);
+}
+h1 { color: #b33939; margin-bottom: 0.5rem; }
+.message { color: #6b2e18; margin-bottom: .8rem; }
+.tools {
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-bottom:8px;
+  align-items:center;
+}
+button {
+  background:#d35400;
+  border:none;
+  padding:8px 12px;
+  font-size:14px;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+}
+button:hover { background:#e67e22; transform: translateY(-2px); }
+.color-picker { display:flex; gap:6px; justify-content:center; margin-bottom:10px; flex-wrap:wrap; }
+.color-option {
+  width:35px; height:35px; border-radius:50%; border:2px solid #fff; cursor:pointer;
+  transition: transform .15s, box-shadow .15s;
+}
+.color-option:hover, .color-option.active { transform:scale(1.12); box-shadow:0 0 8px #ffd700; border:3px solid #b33939; }
+#rangoli-canvas {
+  border:3px solid #b33939;
+  border-radius:12px;
+  background:white;
+  cursor:crosshair;
+  display:block;
+  margin: 0.8rem auto;
+}
+.sexy-message { font-size:1.05rem; margin-top:1rem; color:#b33939; animation:fadeIn .8s ease forwards; }
+@keyframes fadeIn { from {opacity:0} to {opacity:1} }
+.next-button {
+  display:inline-block; margin-top:15px; padding:10px 16px; background:#4ECDC4; color:white; border-radius:12px; text-decoration:none;
+}
+.next-button:hover { box-shadow:0 5px 15px rgba(78,205,196,0.4); transform: translateY(-2px); }
+.brush-label {
+  display:flex; gap:8px; align-items:center; background:#fff8e1; padding:6px 8px; border-radius:10px; border:2px solid #b33939;
+  font-size:13px; color:#6b2e18;
+}
+#brush-size { cursor:pointer; }

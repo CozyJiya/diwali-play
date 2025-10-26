@@ -1,0 +1,129 @@
+body {
+    text-align: center;
+    background: #fff3cd;
+    font-family: 'Poppins', sans-serif;
+    color: #b33939;
+    padding: 2rem;
+}
+
+.game-container {
+    background: #ffecc7;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(179, 57, 57, 0.3);
+}
+
+h1 {
+    color: #b33939;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #6b2e18;
+}
+
+.ingredients {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.ingredient {
+    background: #fff8e1;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid #b33939;
+    cursor: pointer;
+    width: 120px;
+    transition: transform .2s;
+    font-size: 1.1rem;
+}
+
+.ingredient:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px gold;
+}
+
+.kitchen-scene {
+    background: #fff8e1;
+    border-radius: 12px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 1.5rem;
+    border: 3px solid #b33939;
+}
+
+.bowl {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 80px;
+    background: #e0d5c0;
+    border-radius: 0 0 90px 90px;
+    border: 4px solid #b9a894;
+}
+
+.mixture {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 0px;
+    background: #f5ddb2;
+    border-radius: 15px;
+    transition: all .6s ease;
+}
+
+.final-sweet {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 60px;
+    background: #f5ddb2;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: none;
+}
+
+button {
+    background: #d35400;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #4ECDC4;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.next-button:hover {
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+}
+
+.done-message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #7a3b24;
+    font-weight: bold;
+}
