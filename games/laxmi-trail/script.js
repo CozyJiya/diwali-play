@@ -161,7 +161,7 @@ function endGame(won) {
 // Spawn House after enough diyas
 function spawnHouse() {
   // Check condition: Must have 10 or more diyas, and the game must still be active (i.e., not already hit an obstacle)
-  if (diyaCount >= 2 && gameActive) {
+  if (diyaCount >= 10 && gameActive) {
     // Stop spawning more items once the house is on the way
     gameActive = false; 
     clearItemIntervals();
@@ -216,4 +216,5 @@ nextBtn.onclick = () => {
 }
 
 // Replay button
+
 replayBtn.onclick = () => { location.reload(); }
